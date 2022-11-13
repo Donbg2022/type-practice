@@ -56,15 +56,19 @@ correctHtml.innerText = `Correct: ${correct}`
 
   //Adding a success rate of the entire paragraph
  rateOfSuccess = Math.round((correct / total) * 100) 
- percent.innerText = `Success rate: ${rateOfSuccess}%`
+ 
 
 
 })
 
 //reset page
-let reset =  document.querySelector('#reset')
+const reset =  document.querySelector('#reset')
 
 reset.addEventListener('click', () => {
   window.location.reload()})
 
+const finishBtn = document.querySelector('#Success')
+finishBtn.addEventListener('click', () => {
+  percent.innerText = `You have a Success rate of ${rateOfSuccess}% practice makes perfect!`
 
+})
