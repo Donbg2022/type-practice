@@ -3,7 +3,7 @@ const p = document.querySelector('#p1')
 const input = document.querySelector('#input')
 
 //api request to generate text
-axios.get('https://baconipsum.com/api/?type=meat-and-filler')
+axios.get('https://baconipsum.com/api/?type=meat-and-filler&paras=1')
 .then(({ data }) => {
   //promise to assign the random text to a p element
   p.innerText = data[0]
