@@ -5,24 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Paragraph Practice</title>
 </head>
 <body>
-  <div id="timeAndMistakes">
-    <p id="p1"></p>
-    <p></p>
+  <div class="wrapper">
+    <section id="title">
+     <h1>Practice your speed typing</h1>
+    </section>
+    <div id="timeAndMistakes">
+     <p id="p1"></p>
+    </div>
+    <div id="paragraph"></div>
+    <div id="inputs">
+      <textarea id="input"type="text"></textarea>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="grade">
+      <p id="correct">Correct: 0</p>
+      <p id="incorrect">Mistakes: 0</p>
+      <p id="percent">Success rate: 0%</p>
+    </div>
   </div>
-  <div id="paragraph"></div>
-  <div id="inputs">
-    <input id="input"type="text">
-    <button id="reset">Reset</button>
-  </div>
-  <div id="grade">
-    <p id="correct">Correct: 0</p>
-    <p id="incorrect">Mistakes: 0</p>
-    <p id="percent">Success rate: 0%</p>
-  </div>
-
   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <script src="app.js"></script>
 </body>
