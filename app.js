@@ -67,6 +67,8 @@ const reset =  document.querySelector('#reset')
 reset.addEventListener('click', () => {
   window.location.reload()})
 
+
+  //adds a finish button which displays stats 
 const finishBtn = document.querySelector('#Success')
 finishBtn.addEventListener('click', () => {
   percent.innerText = `You have a Success rate of ${rateOfSuccess}% practice makes perfect!`
