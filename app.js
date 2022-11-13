@@ -61,9 +61,10 @@ correctHtml.innerText = `Correct: ${correct}`
 
 })
 
-//adding a success rate button
+//reset page
+let reset =  document.querySelector('#reset')
 
-
-
+reset.addEventListener('click', () => {
+  window.location.reload()})
 
 
