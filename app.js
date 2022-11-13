@@ -13,8 +13,8 @@ axios.get('https://baconipsum.com/api/?type=meat-and-filler')
 
 //logic to add the amount of incorrect versus correct points
 let correctHtml = document.querySelector('#correct')
-let incorrectHtml = document.querySelector('#percent')
-let percent = document.querySelector('#incorrect')
+let incorrectHtml = document.querySelector('#incorrect')
+let percent = document.querySelector('#percent')
 let rateOfSuccess = 0
 
 
@@ -52,9 +52,13 @@ correctHtml.innerText = `Correct: ${correct}`
     wrong++
     incorrectHtml.innerText = `Mistakes: ${wrong}`
   }
+
+
   //Adding a success rate of the entire paragraph
  rateOfSuccess = Math.round((correct / total) * 100) 
  percent.innerText = `Success rate: ${rateOfSuccess}%`
+
+
 })
 
 //adding a success rate button
